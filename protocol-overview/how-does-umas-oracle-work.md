@@ -10,7 +10,7 @@ If a dispute is raised, a request is sent to the DVM. All contracts built on UMA
 
 The first part of UMA's oracle system is the Optimistic Oracle. This is a layer that is designed to optimistically verify pieces of data quickly. It is secured by the UMA DVM, because disputes can be escalated from the Optimistic Oracle layer to the DVM for dispute arbitration. The main lifecycle of the OO looks like this, and is detailed in the Asserter and Disputer rows within the diagram above.
 
-1. An Asserter will post a bonded assertion about the state of the world. This assertion will :
+1. An Asserter will post a bonded assertion about the state of the world. This assertion will include:
    * **identifier:** price identifier being requested.
    * **timestamp:** timestamp of the fact being asserted.
    * **claim:** ancillary data containing additional information about the assertion&#x20;
